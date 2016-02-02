@@ -15,9 +15,11 @@ public class QLab1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Frame f=new Frame();
+        Random rand=new Random();
+        Frame f=new Frame();
         f.setVisible(true);
         f.pack();
+        f.setLocation(rand.nextInt(200), rand.nextInt(500));
     }
     
 }
