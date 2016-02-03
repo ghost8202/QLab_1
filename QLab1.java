@@ -1,25 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package qlab1;
+package Qlab1;
 
-/**
- *
- * @author Chris
- */
-public class QLab1 {
+import java.util.concurrent.TimeUnit;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-      Random rand=new Random();
-       Frame f=new Frame();
-        f.setVisible(true);
-        f.pack();
-        f.setLocation(rand.nextInt(200), rand.nextInt(500));
-    }
-    
-}
+//Chris Hall
+public class Qlab1 {
+
+	public static void main(String[] args){
+		int counter=0;
+		while (counter<50){
+		Frame f = new Frame();
+		f.setVisible(true);
+		f.pack();
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		f.setVisible(false);
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		counter++;
+		}
+		}
+	}
