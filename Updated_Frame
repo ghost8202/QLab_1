@@ -1,5 +1,6 @@
 package qlab1;
 public class Frame extends JFrame { 
+//hi
     Frame(){ 
         Random rand=new Random(); 
         Toolkit tk=Toolkit.getDefaultToolkit(); 
